@@ -8,7 +8,7 @@ To use this example, you will need the following:
 
 I. An LaunchDarkly Account:
 
-If you don't have a LaunchDarkly account, create one!
+If you don't have a LaunchDarkly account, create one here https://launchdarkly.com/ !
 
 You must set up a LaunchDarkly project and environment where your flags will live. Create a new project or use an existing one in your account.
 
@@ -20,7 +20,7 @@ b. Click the Projects tab in the top navigation.
 
 c. Click the Create project button in blue. The "Create a project" panel appears.
 
-d. Give your project a human-readable Name, so you can find it easily later.
+d. Give your project a name, so you can find it easily later.
 
 e. Click Create project. The new project's Environments tab appears.
 
@@ -41,13 +41,12 @@ OPTIONAL: This repository was tested in Glitch, you can also Remix it here https
 
 2. First, create a new project in Python - skip this step if you are using Glitch
 
-mkdir <NAME-YOUR-PROJECT>
 
 3. Then, go into your new directory and create a .env file with this entry:
 
 LD_SDK_KEY=<PASTE-YOUR-SDK-KEY-HERE>
 
-Alternatively, if you are using Glitch, navigate to it and create/insert your key
+Alternatively, if you are using Glitch, navigate to .env and create/insert your key
   
 Run your project in Python and navigate/preview it.
   
@@ -58,7 +57,7 @@ Creating your first feature flag
   
 In LaunchDarkly, navigate to the Feature flags list (make sure you are in your Production project).
 
-  1. Click "Create flag" in blue
+1. Click "Create flag" in blue
 
 2. Enter "Pricing tier 3" in the Name field, set the flag variation to "Boolean"
   
