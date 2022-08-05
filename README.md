@@ -1,8 +1,12 @@
+
+# SE Homework Exercise
+
 Welcome to the easiest way to see how LaunchDarkly can transform your business by implementing a simple yet powerful feature flagging SDK in this Python-based example
 
 This example is a simple pricing application, where different users will get different pricing, depending on the rules you set for your users.
 
-Prerequisites:
+
+## Prerequisites
 
 To use this example, you will need the following:
 
@@ -30,11 +34,7 @@ II. A GitHub account  - you probably have one if you are reading this right now,
 
 III. Ability to run a Python application locally or Remixing this example on Glitch - https://glitch.com/edit/#!/rp-starlight-travel2
 
-
-
-++++++++++++++
-
-Getting Started:
+## Getting Started
 
 1. Choose where you want to clone your repo locally and run the following: 
 
@@ -51,11 +51,16 @@ Alternatively, if you are using Glitch, navigate to .env and create/insert your 
   
 Run your project in Python and navigate/preview it.
   
+## Environment Variables
 
-++++++++++++++
+To run this project, you will need to add the following environment variables to your .env file
 
-Creating your first feature flag
-  
+`LD_SDK_KEY`
+
+
+
+## Create your Feature Flag
+
 In LaunchDarkly, navigate to the Feature flags list (make sure you are in your Production project).
 
 1. Click "Create flag" in blue
@@ -71,9 +76,7 @@ You should see a new (3rd) pricing option.  Try logging in a few times, and then
   
 Congratulations, you have set up an application, where you can play with LaunchDarkly's feature targeting rules!
 
-++++++++++++++
-
-Advanced/Extra Credit - Percentage Roll-out
+## Advanced/Extra Credit - Percentage Roll-out
 
 1. In LaunchDarkly, navigate to the Feature flags list (make sure you are in your Production project).
 
@@ -96,11 +99,7 @@ That user will always receive the third tier until the flag's targeting changes.
 When you find a user who doesn't receive the third tier, save their email address.
 
 Now you've experienced flag targeting in action!
-
-
-++++++++++++++
-
-Advanced/Extra Credit  - Targeting individual Users
+## Advanced/Extra Credit  - Targeting Individual Users
 
 You can override the percentage rollout for any particular user, forcing them to receive or not receive a flag regardless of other targeting rules. 
 
@@ -116,5 +115,7 @@ To target an individual user through the Users list:
 6. Log back into the app as that user and refresh the page. The third pricing tier should now be visible.
 
 Now you have created a default rule and an exception for an individual user - nice!!!
+## Authors
 
-Any questions or comments, please reach out to me directly - roberto.pantoja@yahoo.com
+- [@mazzyrob](https://www.github.com/mazzyrob)
+
