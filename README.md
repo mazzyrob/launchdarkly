@@ -72,5 +72,46 @@ In LaunchDarkly, navigate to the Feature flags list (make sure you are in your P
   
 Congratulations, you have set up an application, where you can play with LaunchDarkly's feature targeting rules!
 
+++++++++++++++
+
+Advanced/Extra Credit - Percentage Roll-out
+
+1. In LaunchDarkly, navigate to the Feature flags list (make sure you are in your Production project).
+
+2. In the "Feature flags" list, click Pricing Tier 3. The flag's Targeting tab appears.
+
+Find the "Default rule", which is the flag variation or rollout that appears when targeting is enabled. 
+
+Click the Serve menu.
+
+Choose "a percentage rollout":
+
+Set the true variation to 40%.
+Confirm that the flag's targeting toggle is set to On.
+Click Review and save.
+
+Log in to the app as a few different users. Keep track of which email addresses you use as you log in and log out.
+When the third pricing tier appears, you know the user you logged in as is part of the 40% of users targeted by the "Pricing Tier 3" flag.
+Log out and log back in again as that same user. The third pricing tier appears every time that user logs in, because LaunchDarkly can identify individual users. 
+That user will always receive the third tier until the flag's targeting changes.
+When you find a user who doesn't receive the third tier, save their email address.
+
+Now you've experienced flag targeting in action!
 
 
+++++++++++++++
+
+Advanced/Extra Credit  - Targeting individual Users
+
+You can override the percentage rollout for any particular user, forcing them to receive or not receive a flag regardless of other targeting rules. 
+
+You can do this by targeting them with rules individually.
+
+To target an individual user through the Users list:
+
+1. Log into the pricing app with the email address of the user who did not receive the "Pricing Tier 3" flag.
+2. Click on the avatar icon in the top-right of the page. The 10-character hashed user key is displayed. Copy this key and save it.
+3. Navigate to the LaunchDarkly Users list. Find the user key you saved in the list of users and click their name. The user's menu appears.
+4. Change the Variation setting for the "Pricing Tier 3" flag from false to true (blue diamond).
+5. Click "Review and Save"
+6. Log back into the app as that user and refresh the page. The third pricing tier should now be visible.
