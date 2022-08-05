@@ -28,7 +28,7 @@ f. Click the "Production" environment SDK key to copy it to your clipboard: VERY
 
 II. A GitHub account  - you probably have one if you are reading this right now, but if you don't, sign up at github.com and follow the instructions
 
-III. Ability to run a Python application locally or using this example on Glitch - https://glitch.com/edit/#!/rp-starlight-travel2
+III. Ability to run a Python application locally or Remixing this example on Glitch - https://glitch.com/edit/#!/rp-starlight-travel2
 
 
 
@@ -40,7 +40,6 @@ Getting Started:
 OPTIONAL: This repository was tested in Glitch, you can also Remix it here https://glitch.com/edit/#!/rp-starlight-travel2 NOTE: you will need a Glitch Account
 
 2. First, create a new project in Python - skip this step if you are using Glitch
-
 
 3. Then, go into your new directory and create a .env file with this entry and your SDK Key:
 
@@ -65,7 +64,7 @@ In LaunchDarkly, navigate to the Feature flags list (make sure you are in your P
 
 4. Turn on the flag - the code is already inserted in this example.  You can see the code in the views/tier_3.html and the handling in the server.py file
   
-5. You should see a new pricing option.  
+5. You should see a new (3rd) pricing option.  
   
 6. Try logging in a few times, and then you can create additional targeting options by going back into LaunchDarkly and targeting specific email hash values or percentages
 
