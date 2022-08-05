@@ -42,9 +42,9 @@ OPTIONAL: This repository was tested in Glitch, you can also Remix it here https
 2. First, create a new project in Python - skip this step if you are using Glitch
 
 
-3. Then, go into your new directory and create a .env file with this entry:
+3. Then, go into your new directory and create a .env file with this entry and your SDK Key:
 
-LD_SDK_KEY=<PASTE-YOUR-SDK-KEY-HERE>
+LD_SDK_KEY=ENTER-YOUR-KEY-HERE
 
 Alternatively, if you are using Glitch, navigate to .env and create/insert your key
   
