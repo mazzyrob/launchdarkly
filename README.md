@@ -15,14 +15,22 @@ You must set up a LaunchDarkly project and environment where your flags will liv
 To create a new project:
 
 a. Navigate to the Account settings page.
+
 b. Click the Projects tab in the top navigation.
+
 c. Click Create project button in blue. The "Create a project" panel appears.
+
 d. Give your project a human-readable Name, so you can find it easily later.
+
 e. Click Create project. The new project's Environments tab appears.
+
 f. Click the "Production" environment SDK key to copy it to your clipboard: VERY IMPORTANT - you will need this number later!
 
 2. A GitHub account  - you probably have one if you are reading this right now, but if you don't, sign up at github.com and follow the instructions
 
 Getting Started:
 
-1. 
+1. Clone the repository - https://github.com/mazzyrob/launchdarkly.git
+OPTIONAL: This repository was tested in Glitch, you can also Remix it here https://glitch.com/edit/#!/rp-starlight-travel2 NOTE: you will need a Glitch Account
+
+2. Edit the 
