@@ -36,12 +36,14 @@ III. Ability to run a Python application locally or Remixing this example on Gli
 
 Getting Started:
 
-1. Clone the repository locally - https://github.com/mazzyrob/launchdarkly.git
+1. Choose where you want to clone your repo locally and run the following: 
+
+gh repo clone mazzyrob/launchdarkly
+
+
 OPTIONAL: This repository was tested in Glitch, you can also Remix it here https://glitch.com/edit/#!/rp-starlight-travel2 NOTE: you will need a Glitch Account
 
-2. First, create a new project in Python - skip this step if you are using Glitch
-
-3. Then, go into your new directory and create a .env file with this entry and your SDK Key:
+2. Then, go into your new directory and create a .env file with this entry and your SDK Key:
 
 LD_SDK_KEY=ENTER-YOUR-KEY-HERE
 
@@ -64,9 +66,7 @@ In LaunchDarkly, navigate to the Feature flags list (make sure you are in your P
 
 4. Turn on the flag - the code is already inserted in this example.  You can see the code in the views/tier_3.html and the handling in the server.py file
   
-5. You should see a new (3rd) pricing option.  
-  
-6. Try logging in a few times, and then you can create additional targeting options by going back into LaunchDarkly and targeting specific email hash values or percentages
+You should see a new (3rd) pricing option.  Try logging in a few times, and then you can create additional targeting options by going back into LaunchDarkly and targeting specific email hash values or percentages
 
   
 Congratulations, you have set up an application, where you can play with LaunchDarkly's feature targeting rules!
@@ -81,15 +81,15 @@ Advanced/Extra Credit - Percentage Roll-out
 
 Find the "Default rule", which is the flag variation or rollout that appears when targeting is enabled. 
 
-Click the Serve menu.
-
+3. Click the Serve drop-down. 
 Choose "a percentage rollout":
-
 Set the true variation to 40%.
 Confirm that the flag's targeting toggle is set to On.
-Click Review and save.
+
+4. Click Review and save.
 
 Log in to the app as a few different users. Keep track of which email addresses you use as you log in and log out.
+
 When the third pricing tier appears, you know the user you logged in as is part of the 40% of users targeted by the "Pricing Tier 3" flag.
 Log out and log back in again as that same user. The third pricing tier appears every time that user logs in, because LaunchDarkly can identify individual users. 
 That user will always receive the third tier until the flag's targeting changes.
@@ -114,3 +114,7 @@ To target an individual user through the Users list:
 4. Change the Variation setting for the "Pricing Tier 3" flag from false to true (blue diamond).
 5. Click "Review and Save"
 6. Log back into the app as that user and refresh the page. The third pricing tier should now be visible.
+
+Now you have created a default rule and an exception for an individual user - nice!!!
+
+Any questions or comments, please reach out to me directly - roberto.pantoja@yahoo.com
