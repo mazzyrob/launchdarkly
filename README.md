@@ -6,7 +6,7 @@ Prerequisites:
 
 To use this example, you will need the following:
 
-I. An LaunchDarkly Account:
+I. A LaunchDarkly Account:
 
 If you don't have a LaunchDarkly account, create one here https://launchdarkly.com/ !
 
